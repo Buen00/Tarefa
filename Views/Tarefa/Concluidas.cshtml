@@ -1,0 +1,31 @@
+@model IEnumerable<Tarefa.Models.Cadastro>
+    
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Prioridade</th>
+                <th>Nome Tarefa</th>
+                <th>Data</th>
+                <th>Percentual </th>
+                <th></th>
+                <th></th>
+            </tr>
+            </tr>
+        </thead>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.prioridade</td>
+                <td>@item.nameTarefa</td>
+                <td>@item.data</td>
+                <td>@item.percent</td>
+               <td><a class="btn btn-danger" href="Tarefa/Dell/@item.id">Delete</a> </td>
+            </tr>
+        }
+     </table>
+</div>
+
+        

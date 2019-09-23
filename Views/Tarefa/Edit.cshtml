@@ -1,0 +1,45 @@
+@model Tarefa.Models.Cadastro
+
+<div class="form-horizontal">
+    <form action="Edit" method="Post">
+
+        <div class="form-group">
+            <label>Id</label>
+            <input  class="form-control"
+                    type="text" name="id"
+                    value="@Model.id"/>
+        </div>
+
+        <div class="form-group">
+            <label>Prioridade</label>
+            <input  class="form-control"
+                    type="text" name="prioridade"
+                    value="@Model.prioridade"/>
+        </div>
+
+        <div class="form-group">
+            <label>Nome Tarefa</label>
+            <input  class="form-control"
+                    type="text" name="nameTarefa"
+                    value="@Model.nameTarefa"/>
+        </div>
+
+        <div class="form-group">
+            <label>Data</label>
+            <input  class="form-control"
+                    type="text" name="data"
+                    value="@Model.data"/>
+        </div>
+
+        <div class="form-group">
+            <label>Percentual</label>
+            <input  class="form-control"
+                    type="text" name="percent"
+                    value="@Model.percent"/>
+        </div>
+
+        <input  class="btn btn-primary" 
+                type="submit" value="Salvar"/>
+
+    </form>
+</div>
